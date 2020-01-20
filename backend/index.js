@@ -1,6 +1,8 @@
 const express = require('express');
 const routes = require('./routes');
 const mongoose = require('mongoose');
+const cors = require('cors');
+
 
 //startando a aplicação
 const app = express();
@@ -11,6 +13,7 @@ mongoose.connect('mongodb+srv://Wagner:wgr061228@cluster0-79qsy.mongodb.net/test
     useNewUrlParser: true,
 })
 
+app.use(cors());
 app.use(express.json());
 app.use(routes);
 app.listen(2828);

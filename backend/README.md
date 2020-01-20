@@ -1,1 +1,0 @@
-Projeto realizado durante a semana Oministack da Rocketseat.
